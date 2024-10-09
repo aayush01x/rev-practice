@@ -41,6 +41,8 @@ The program says that passwords are between 8, 16 characters and asks us input f
 `getsn` function is called to take input.
 
 Lets have a look at `getsn` function first:
+### getsn
+
 ```assembly
 45ce <getsn>
 45ce:  0e12           push	r14
