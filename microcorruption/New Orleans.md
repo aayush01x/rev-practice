@@ -46,6 +46,7 @@ First, `0x2400` is moved into `r15` which is a memory address. Then, using sever
 Converting to ascii: `3e 35 42 2f 6d 45 4e`, we get **`>5B/mEN`**.
 
 ![alt text](../imgs/mc-new-orleans/image.png)
+
 We can also see this data has been written after stepping into `create_password` function and stepping till `44ac`.
 
 Alright, now lets check the `check_password` function.
