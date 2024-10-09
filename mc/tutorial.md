@@ -1,8 +1,4 @@
 # Tutorial
-Few important things about MSP430:
-![alt text](image-3.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
 ## main
 Looking at the disassembly of the main function:
 ```assembly
