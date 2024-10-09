@@ -1,6 +1,10 @@
 # Tutorial
-Looking at the disassembly, this is the main function:
-## Main function
+Few important things about MSP430:
+![alt text](image-3.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+## main
+Looking at the disassembly of the main function:
 ```assembly
 4438 <main>
 4438:  3150 9cff      add	#0xff9c, sp
@@ -34,7 +38,7 @@ Otherwise, there is no jump, and the program puts `"Invalid password; try again.
 
 So, we want that `r15` **is not** zero after `check_password` function is called.
 
-## check_password function
+## check_password
 
 Disassembly:
 ```assembly
