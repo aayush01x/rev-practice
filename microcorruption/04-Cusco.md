@@ -76,6 +76,7 @@ Getting back to the login function, Lets check value in these registers just bef
 Lets try giving input of 48 characters: 48 times A.
 
 On continuing, we get `insn address unaligned` on the Debugger Console:
+
 ![alt text](../imgs/mc-cusco/image-1.png)
 
 This may mean that we have **overwritten the return address**. So, this is case of **Buffer Overflow**!
@@ -86,9 +87,11 @@ At the last `ret`, pops the return address off the stack (which is pointed by th
 
 For example, here `sp` contains address `43fe`, 
 which points to the address `443c`
+
 ![alt text](../imgs/mc-cusco/image-3.png)
 
 By stepping, we can see that return calls `<__step_progExec__>` at`443c`.
+
 ![alt text](../imgs/mc-cusco/image-4.png)
 
 We also notice that address which holds the return address (`43fe`) can be overwritten by our input data as in the range of 48 bytes.
